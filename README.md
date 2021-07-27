@@ -21,5 +21,10 @@ There are several ways to run a Spring Boot application on your local machine. E
 
 # Future
 - I would love to increase the coverage to 100%, covering few exception scenarios that missed
-- Make the h2 DB to not loose data with every restart.
 - Add more metrics to actuator
+
+# H2 Database
+- Currently the project uses h2 in memory database (jdbc:h2:mem:userprofileDB)
+- username/password would be admin/admin
+
+- This above configuration clears data every time the server is restarted. Please use connection string as following if you would like to maintain data over successive restarts. (replace with spring.datasource.url=jdbc:h2:file:./data/userprofileDB in the application.properties and use them while connecting)
