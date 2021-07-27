@@ -15,9 +15,11 @@ There are several ways to run a Spring Boot application on your local machine. E
 - The application will run on the port 8881 locally.
 - All the available operations are listed in the open-api (swagger doc). Access it using http://localhost:8881/swagger-ui-user-profile.html
 - The application uses h2 in memory database to store and retrieve user profiles. Access h2 repository using http://localhost:8881/h2-console
+- Actuator is enabled for health and info (http://localhost:8881/actuator/)
 - Application has unit test coverage of 100% on service & controller layer. And >85% coverage overall.
 - Postman collection for the same can be found here - https://www.getpostman.com/collections/c897cb817a1b24cae24f (Import the link in your postman)
 
 # Future
 - I would love to increase the coverage to 100%, covering few exception scenarios that missed
 - Make the h2 DB to not loose data with every restart.
+- Add more metrics to actuator
